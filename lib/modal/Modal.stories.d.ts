@@ -6,7 +6,8 @@ declare const meta: {
     component: import('../../../node_modules/react').FC<import('./Modal').ModalProps> & {
         ModalHeader: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').PropsWithChildren<import('../../../node_modules/react').HTMLAttributes<HTMLElement>>>;
         ModalTitle: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').PropsWithChildren<import('../../../node_modules/react').HTMLAttributes<HTMLSpanElement>>>;
-        ModalCloseButton: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').PropsWithChildren<import('../../../node_modules/react').HTMLAttributes<HTMLButtonElement>>>;
+        ModalCloseButton: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').ButtonHTMLAttributes<HTMLButtonElement>>;
+        ModalLongButton: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').ButtonHTMLAttributes<HTMLButtonElement>>;
         ModalContent: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').PropsWithChildren<import('../../../node_modules/react').HTMLAttributes<HTMLElement>>>;
         ModalFooter: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').PropsWithChildren<import('../../../node_modules/react').HTMLAttributes<HTMLDivElement>>>;
     };
@@ -29,7 +30,7 @@ declare const meta: {
                 };
             };
         };
-        onClick: {
+        onClose: {
             description: string;
         };
         style: {
@@ -50,7 +51,7 @@ declare const meta: {
         };
     };
     args: {
-        onClick: import('@vitest/spy').Mock<[event: import('../../../node_modules/react').MouseEvent<HTMLElement, MouseEvent>], void>;
+        onClose: import('@vitest/spy').Mock<[], void>;
     };
     render: ({ style, ...args }: import('./Modal').ModalProps) => import("react/jsx-runtime").JSX.Element;
     tags: string[];
