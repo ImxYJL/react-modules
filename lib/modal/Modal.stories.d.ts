@@ -59,6 +59,6 @@ declare const meta: {
 export default meta;
 type Story = StoryObj<typeof Modal>;
 export declare const 기본: Story;
-export declare const 제목이있는모달: Story;
-export declare const 상단닫기버튼이있는모달: Story;
-export declare const 하단닫기버튼이있는모달: Story;
+export declare const 제목이_있는_모달: Story;
+export declare const 상단_닫기_버튼이_있는_모달: Story;
+export declare const 하단_닫기_버튼이_있는_모달: Story;
