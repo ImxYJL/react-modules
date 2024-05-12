@@ -1,5 +1,4 @@
 import { StoryObj } from '@storybook/react';
-import { PromptModalProps } from './PromptModal';
 import { default as Modal } from './Modal';
 
 declare const meta: {
@@ -85,5 +84,5 @@ export declare const L_사이즈_모달: Story;
 export declare const 알림_모달: Story;
 export declare const 제목이_없는_알림_모달: Story;
 export declare const 확인_모달: Story;
-export declare const 입력_모달: Story<PromptModalProps>;
-export declare const 입력이_3개인_모달: Story<PromptModalProps>;
+export declare const 입력_모달: Story;
+export declare const 입력이_3개인_모달: Story;
