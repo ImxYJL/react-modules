@@ -1,4 +1,5 @@
 import { StoryObj } from '@storybook/react';
+import { PromptModalProps } from './PromptModal';
 import { default as Modal } from './Modal';
 
 declare const meta: {
@@ -7,8 +8,17 @@ declare const meta: {
         ModalHeader: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').PropsWithChildren<import('../../../node_modules/react').HTMLAttributes<HTMLElement>>>;
         ModalTitle: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').PropsWithChildren<import('../../../node_modules/react').HTMLAttributes<HTMLSpanElement>>>;
         ModalCloseButton: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').ButtonHTMLAttributes<HTMLButtonElement>>;
-        ModalLongButton: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').ButtonHTMLAttributes<HTMLButtonElement>>;
+        ModalButton: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').ButtonHTMLAttributes<HTMLButtonElement> & {
+            size: "S" | "M" | "L";
+        }>;
         ModalContent: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').PropsWithChildren<import('../../../node_modules/react').HTMLAttributes<HTMLElement>>>;
+        ModalInputLabel: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').PropsWithChildren<import('../../../node_modules/react').HTMLAttributes<HTMLLabelElement> & {
+            htmlFor?: string | undefined;
+        }>>;
+        ModalInput: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').PropsWithChildren<import('../../../node_modules/react').HTMLAttributes<HTMLElement> & {
+            type: string;
+            placeholder?: string | undefined;
+        }>>;
         ModalFooter: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').PropsWithChildren<import('../../../node_modules/react').HTMLAttributes<HTMLDivElement>>>;
     };
     parameters: {
@@ -42,6 +52,13 @@ declare const meta: {
             };
             description: string;
         };
+        size: {
+            control: {
+                type: "radio";
+            };
+            options: string[];
+            description: string;
+        };
         position: {
             control: {
                 type: "radio";
@@ -62,3 +79,11 @@ export declare const 기본: Story;
 export declare const 제목이_있는_모달: Story;
 export declare const 상단_닫기_버튼이_있는_모달: Story;
 export declare const 하단_닫기_버튼이_있는_모달: Story;
+export declare const S_사이즈_모달: Story;
+export declare const M_사이즈_모달: Story;
+export declare const L_사이즈_모달: Story;
+export declare const 알림_모달: Story;
+export declare const 제목이_없는_알림_모달: Story;
+export declare const 확인_모달: Story;
+export declare const 입력_모달: Story<PromptModalProps>;
+export declare const 입력이_3개인_모달: Story<PromptModalProps>;
