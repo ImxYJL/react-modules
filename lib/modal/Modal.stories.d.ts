@@ -18,7 +18,11 @@ declare const meta: {
             type: string;
             placeholder?: string | undefined;
         }>>;
-        ModalFooter: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').PropsWithChildren<import('../../../node_modules/react').HTMLAttributes<HTMLDivElement>>>;
+        ModalFooter: import('../../../node_modules/react').FunctionComponent<import('../../../node_modules/react').HTMLAttributes<HTMLDivElement> & {
+            children?: import('../../../node_modules/react').ReactNode;
+        } & {
+            align: "center" | "left" | "right";
+        }>;
     };
     parameters: {
         layout: string;

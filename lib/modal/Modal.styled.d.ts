@@ -13,4 +13,6 @@ export declare const ModalButton: import('styled-components').IStyledComponent<"
 export declare const ModalContent: import('styled-components').IStyledComponent<"web", import('styled-components/dist/types').FastOmit<import('../../../node_modules/react').DetailedHTMLProps<import('../../../node_modules/react').HTMLAttributes<HTMLElement>, HTMLElement>, never>>;
 export declare const ModalLabel: import('styled-components').IStyledComponent<"web", import('styled-components/dist/types').FastOmit<import('../../../node_modules/react').DetailedHTMLProps<import('../../../node_modules/react').LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>, never>>;
 export declare const ModalInput: import('styled-components').IStyledComponent<"web", import('styled-components/dist/types').FastOmit<import('../../../node_modules/react').DetailedHTMLProps<import('../../../node_modules/react').InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, never>>;
-export declare const ModalFooter: import('styled-components').IStyledComponent<"web", import('styled-components/dist/types').FastOmit<import('../../../node_modules/react').DetailedHTMLProps<import('../../../node_modules/react').HTMLAttributes<HTMLElement>, HTMLElement>, never>>;
+export declare const ModalFooter: import('styled-components').IStyledComponent<"web", import('styled-components/dist/types').Substitute<import('../../../node_modules/react').DetailedHTMLProps<import('../../../node_modules/react').HTMLAttributes<HTMLElement>, HTMLElement>, {
+    align: "left" | "center" | "right";
+}>>;

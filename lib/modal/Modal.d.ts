@@ -32,5 +32,7 @@ type ModalInputType = React.FC<React.PropsWithChildren<HTMLAttributes<HTMLElemen
     type: HTMLInputElement["type"];
     placeholder?: string;
 }>>;
-type ModalFooterType = React.FC<React.PropsWithChildren<HTMLAttributes<HTMLDivElement>>>;
+type ModalFooterType = React.FC<React.PropsWithChildren<HTMLAttributes<HTMLDivElement>> & {
+    align: "left" | "center" | "right";
+}>;
 export default Modal;
